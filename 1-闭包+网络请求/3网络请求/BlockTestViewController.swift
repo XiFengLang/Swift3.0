@@ -8,17 +8,33 @@
 
 import UIKit
 
+
+typealias JKTestBlock = ((_ text:String) -> String)?
+
 class BlockTestViewController: UIViewController {
     
     //  ((_ block携带的参数及类型)  -> 返回类型)?这里必须可选
-    var block: ((_ text:String) -> String)?
-    
+    var block: JKTestBlock
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
         self.blockTest()
         self.networkRequest()
+        
+        typealias RuntimeBlock = (_ text:String) -> Void
+        let myBlock = { (str: String) in
+            print(str)
+        }
+        
+        // 编译时会报错，Showing Recent Issues Command failed due to signal: Segmentation fault: 11
+        //objc_setAssociatedObject(self, "key", myBlock, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        
+        // 解决方案
+        objc_setAssociatedObject(self, "key", myBlock as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        
+        let tempBlock:RuntimeBlock = objc_getAssociatedObject(self, "key") as! RuntimeBlock
+        tempBlock("Swift-Runtime-objc_setAssociatedObject")
     }
     
     // Block 闭包
