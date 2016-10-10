@@ -10,6 +10,9 @@
 		9F46B8131DAA42BF008E4E77 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46B8121DAA42BF008E4E77 /* UIImageExtension.swift */; };
 		9F46B8151DAA4844008E4E77 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46B8141DAA4844008E4E77 /* UISearchBarExtension.swift */; };
 		9F46B8171DAA5645008E4E77 /* UIViewFrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46B8161DAA5645008E4E77 /* UIViewFrameExtension.swift */; };
+		9F46B8221DAB8E6F008E4E77 /* AMapNaviKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F46B8211DAB8E6F008E4E77 /* AMapNaviKit.framework */; };
+		9F46B8241DAB8E7D008E4E77 /* AMapNavi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F46B8231DAB8E7D008E4E77 /* AMapNavi.bundle */; };
+		9F46B8261DAB8E91008E4E77 /* JKNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46B8251DAB8E91008E4E77 /* JKNavigationViewController.swift */; };
 		9F4B98A41DA9E52C0092D7F8 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F4B98A31DA9E52C0092D7F8 /* AMap.bundle */; };
 		9F4B98A61DAA2A9C0092D7F8 /* JKMapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B98A51DAA2A9C0092D7F8 /* JKMapSearchViewController.swift */; };
 		9F5B7C951DA8EBDF0092AE3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B7C941DA8EBDF0092AE3F /* AppDelegate.swift */; };
@@ -45,6 +48,9 @@
 		9F46B8121DAA42BF008E4E77 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		9F46B8141DAA4844008E4E77 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
 		9F46B8161DAA5645008E4E77 /* UIViewFrameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameExtension.swift; sourceTree = "<group>"; };
+		9F46B8211DAB8E6F008E4E77 /* AMapNaviKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapNaviKit.framework; sourceTree = "<group>"; };
+		9F46B8231DAB8E7D008E4E77 /* AMapNavi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMapNavi.bundle; sourceTree = "<group>"; };
+		9F46B8251DAB8E91008E4E77 /* JKNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKNavigationViewController.swift; sourceTree = "<group>"; };
 		9F4B98A31DA9E52C0092D7F8 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
 		9F4B98A51DAA2A9C0092D7F8 /* JKMapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKMapSearchViewController.swift; sourceTree = "<group>"; };
 		9F5B7C911DA8EBDF0092AE3F /* SwiftGaoDe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGaoDe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +93,7 @@
 				9F5B7CC61DA8F5360092AE3F /* JavaScriptCore.framework in Frameworks */,
 				9F5B7CC41DA8F52F0092AE3F /* AdSupport.framework in Frameworks */,
 				9F5B7CC21DA8F52A0092AE3F /* Security.framework in Frameworks */,
+				9F46B8221DAB8E6F008E4E77 /* AMapNaviKit.framework in Frameworks */,
 				9F5B7CC01DA8F5230092AE3F /* libc++.tbd in Frameworks */,
 				9F5B7CBE1DA8F5170092AE3F /* libstdc++.6.0.9.tbd in Frameworks */,
 				9F5B7CBC1DA8F50A0092AE3F /* libz.tbd in Frameworks */,
@@ -129,6 +136,8 @@
 		9F46B81A1DAA58A9008E4E77 /* 高德 */ = {
 			isa = PBXGroup;
 			children = (
+				9F46B8231DAB8E7D008E4E77 /* AMapNavi.bundle */,
+				9F46B8211DAB8E6F008E4E77 /* AMapNaviKit.framework */,
 				9F4B98A31DA9E52C0092D7F8 /* AMap.bundle */,
 				9F5B7CA61DA8F4520092AE3F /* AMapFoundationKit.framework */,
 				9F5B7CA71DA8F4520092AE3F /* AMapLocationKit.framework */,
@@ -164,6 +173,7 @@
 				9F5B7CD61DA9035B0092AE3F /* JKLocationTableViewCell.swift */,
 				9F5B7CD71DA9035B0092AE3F /* JKMapViewController.swift */,
 				9F4B98A51DAA2A9C0092D7F8 /* JKMapSearchViewController.swift */,
+				9F46B8251DAB8E91008E4E77 /* JKNavigationViewController.swift */,
 				9F46B81A1DAA58A9008E4E77 /* 高德 */,
 				9F46B8191DAA588A008E4E77 /* 分类拓展 */,
 				9F46B8181DAA5872008E4E77 /* 通用 */,
@@ -256,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5B7CD41DA902EE0092AE3F /* Main.storyboard in Resources */,
+				9F46B8241DAB8E7D008E4E77 /* AMapNavi.bundle in Resources */,
 				9F5B7C9F1DA8EBDF0092AE3F /* LaunchScreen.storyboard in Resources */,
 				9F4B98A41DA9E52C0092D7F8 /* AMap.bundle in Resources */,
 				9F5B7C9C1DA8EBDF0092AE3F /* Assets.xcassets in Resources */,
@@ -277,6 +288,7 @@
 				9F5B7C951DA8EBDF0092AE3F /* AppDelegate.swift in Sources */,
 				9F46B8171DAA5645008E4E77 /* UIViewFrameExtension.swift in Sources */,
 				9F5B7CDA1DA9035B0092AE3F /* JKLocationTableViewCell.swift in Sources */,
+				9F46B8261DAB8E91008E4E77 /* JKNavigationViewController.swift in Sources */,
 				9F5B7CDB1DA9035B0092AE3F /* JKMapViewController.swift in Sources */,
 				9F5B7CD11DA902D70092AE3F /* JKGlobalDefinition.swift in Sources */,
 				9F5B7CD01DA902D70092AE3F /* FCBaseViewController.swift in Sources */,

@@ -118,7 +118,18 @@ class JKMapViewController: FCBaseViewController {
     }
     
     final func printCurrentLocationMessage() {
-        JKLOG(self.currentPOI?.name)
+        let locationA = CLLocation.init(latitude: (self.mapView?.userLocation.coordinate.latitude)!, longitude: (self.mapView?.userLocation.coordinate.longitude)!)
+        let locationB = CLLocation.init(latitude: (self.mapView?.centerCoordinate.latitude)!, longitude: (self.mapView?.centerCoordinate.longitude)!)
+        let distance = JKLocationManager.shared.distance(betweenLocation: locationA, andLocation: locationB)
+        JKLOG("距离:\(distance)")
+        
+        
+        
+        let navVC = JKNavigationViewController.init()
+        navVC.startPoint = AMapNaviPoint.location(withLatitude: CGFloat((self.mapView?.userLocation.coordinate.latitude)!), longitude: CGFloat((self.mapView?.userLocation.coordinate.longitude)!))
+        navVC.endPoint = AMapNaviPoint.location(withLatitude: CGFloat((self.mapView?.centerCoordinate.latitude)!), longitude: CGFloat((self.mapView?.centerCoordinate.longitude)!))
+        self.present(navVC, animated: true, completion: nil
+        )
     }
     
     
