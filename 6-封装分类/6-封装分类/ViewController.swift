@@ -17,18 +17,24 @@ class ViewController: UIViewController {
         // 此处用JKLOG有BUG，待解决
         
         
+        print("标记")
         
-        let testView = UIView.init()
-        testView.backgroundColor = UIColor.red
-        self.view.addSubview(testView)
+//        let text = "大黄金卡加的我回家看的黄金卡案件和卡号及大家很快哈哈啊环境的骄傲的健康大加快大家很快大家看大海阿卡丽几哈大家哈达"
         
-        testView.x = 100
-        testView.y = 200
-        testView.width = 100
-        testView.height = 100
-        testView.centerX = 200
-        testView.centerY = 200
+        let rect = CGRect.init(x: self.view.midX - 100,
+                               y: self.view.midY - 100,
+                               width: 200, height: 200)
         
+//        let image = UIImage.image(withColor: UIColor.blue, size: CGSize.init(width: 300, height: 300))
+//        let image_R = image?.rounding()
+        
+//        let image_R = UIImage.roundingImage(withColor: UIColor.blue, size: CGSize.init(width: 300, height: 300), radius: 80)
+        let image_R = UIImage.roundingImage(withColor: UIColor.blue, size: CGSize.init(width: 300, height: 300), radius: 80, borderColor: UIColor.red, borderWidth: 10)
+
+//        let view = UIView.jk_view(withFrame: rect, backgroundColor: UIColor.red)
+        let view = UIImageView.jk_imageView(withFrame: rect, image: image_R)
+//        let view = UILabel.jk_label_WordWrap(withFrame: rect, text: text, font: UIFont.systemFont(ofSize: 18))
+        self.view.addSubview(view)
         
     }
 
@@ -36,9 +42,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-
-
 }
 

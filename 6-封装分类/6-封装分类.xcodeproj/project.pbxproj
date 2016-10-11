@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F02E5291DAC9F1400951504 /* UIView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02E5281DAC9F1400951504 /* UIView+Factory.swift */; };
+		9F02E52B1DAC9FAB00951504 /* JKThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02E52A1DAC9FAB00951504 /* JKThen.swift */; };
+		9FB05FF21DACB47C0019AFE7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */; };
 		9FC56E8D1DABA4BD00F0CA20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56E8C1DABA4BD00F0CA20 /* AppDelegate.swift */; };
 		9FC56E8F1DABA4BD00F0CA20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56E8E1DABA4BD00F0CA20 /* ViewController.swift */; };
 		9FC56E921DABA4BD00F0CA20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC56E901DABA4BD00F0CA20 /* Main.storyboard */; };
 		9FC56E941DABA4BD00F0CA20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC56E931DABA4BD00F0CA20 /* Assets.xcassets */; };
 		9FC56E971DABA4BD00F0CA20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC56E951DABA4BD00F0CA20 /* LaunchScreen.storyboard */; };
 		9FC56E9F1DABA51200F0CA20 /* RuntimeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56E9E1DABA51200F0CA20 /* RuntimeCategory.swift */; };
-		9FC56EA51DABA77700F0CA20 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA11DABA77700F0CA20 /* Notification+Extension.swift */; };
+		9FC56EA51DABA77700F0CA20 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA11DABA77700F0CA20 /* NotificationName+Extension.swift */; };
 		9FC56EA61DABA77700F0CA20 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA21DABA77700F0CA20 /* UIImage+Extension.swift */; };
 		9FC56EA71DABA77700F0CA20 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA31DABA77700F0CA20 /* UISearchBar+Extension.swift */; };
 		9FC56EA81DABA77700F0CA20 /* UIViewFrame+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F02E5281DAC9F1400951504 /* UIView+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Factory.swift"; sourceTree = "<group>"; };
+		9F02E52A1DAC9FAB00951504 /* JKThen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKThen.swift; sourceTree = "<group>"; };
+		9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9FC56E891DABA4BD00F0CA20 /* 6-封装分类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "6-封装分类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC56E8C1DABA4BD00F0CA20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC56E8E1DABA4BD00F0CA20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +36,7 @@
 		9FC56E961DABA4BD00F0CA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC56E981DABA4BD00F0CA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC56E9E1DABA51200F0CA20 /* RuntimeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeCategory.swift; sourceTree = "<group>"; };
-		9FC56EA11DABA77700F0CA20 /* Notification+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		9FC56EA11DABA77700F0CA20 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		9FC56EA21DABA77700F0CA20 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		9FC56EA31DABA77700F0CA20 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewFrame+Extension.swift"; sourceTree = "<group>"; };
@@ -84,10 +90,12 @@
 		9FC56EA01DABA6B600F0CA20 /* 封装 */ = {
 			isa = PBXGroup;
 			children = (
-				9FC56EA11DABA77700F0CA20 /* Notification+Extension.swift */,
+				9FC56EA11DABA77700F0CA20 /* NotificationName+Extension.swift */,
 				9FC56EA21DABA77700F0CA20 /* UIImage+Extension.swift */,
 				9FC56EA31DABA77700F0CA20 /* UISearchBar+Extension.swift */,
 				9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */,
+				9F02E5281DAC9F1400951504 /* UIView+Factory.swift */,
+				9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */,
 			);
 			path = "封装";
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 		9FC56EA91DABA8D300F0CA20 /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
+				9F02E52A1DAC9FAB00951504 /* JKThen.swift */,
 				9FC56EAA1DABA8D300F0CA20 /* JKBaseViewController.swift */,
 				9FC56EAB1DABA8D300F0CA20 /* JKGlobalDefinition.swift */,
 			);
@@ -177,12 +186,15 @@
 				9FC56E8F1DABA4BD00F0CA20 /* ViewController.swift in Sources */,
 				9FC56EA71DABA77700F0CA20 /* UISearchBar+Extension.swift in Sources */,
 				9FC56E8D1DABA4BD00F0CA20 /* AppDelegate.swift in Sources */,
-				9FC56EA51DABA77700F0CA20 /* Notification+Extension.swift in Sources */,
+				9FB05FF21DACB47C0019AFE7 /* UIColor+Extension.swift in Sources */,
+				9FC56EA51DABA77700F0CA20 /* NotificationName+Extension.swift in Sources */,
 				9FC56EAE1DABA8D300F0CA20 /* JKGlobalDefinition.swift in Sources */,
+				9F02E5291DAC9F1400951504 /* UIView+Factory.swift in Sources */,
 				9FC56EAD1DABA8D300F0CA20 /* JKBaseViewController.swift in Sources */,
 				9FC56EA61DABA77700F0CA20 /* UIImage+Extension.swift in Sources */,
 				9FC56EA81DABA77700F0CA20 /* UIViewFrame+Extension.swift in Sources */,
 				9FC56E9F1DABA51200F0CA20 /* RuntimeCategory.swift in Sources */,
+				9F02E52B1DAC9FAB00951504 /* JKThen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,7 @@
 				9FC56E9D1DABA4BD00F0CA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

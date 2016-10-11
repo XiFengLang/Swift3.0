@@ -14,13 +14,13 @@ public extension UISearchBar {
         var searchBarFrame = self.frame
         searchBarFrame.size.height = 44
         self.frame = searchBarFrame
-        self.barTintColor = JKColor_RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863)
+        self.barTintColor = UIColor.RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863)
         self.tintColor = UIColor.blue//JKColor_RGB(r: 12, g: 1896, b: 120)
         self.placeholder = placeholder
         self.returnKeyType = .done
         self.setImage(UIImage.init(named: "im_search_image"), for: .search, state: .normal)
         
-        let image = UIImage.image(withColor: JKColor_RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863), imageSize: CGSize.init(width: JKScreenWidth(), height: 66))
+        let image = UIImage.image(withColor: UIColor.RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863)!, size: CGSize.init(width: JKScreenWidth(), height: 66))
         self.setBackgroundImage(image, for: .any, barMetrics: .default)
         
         if let searchTextField: UITextField = self.value(forKey: "searchField") as? UITextField {

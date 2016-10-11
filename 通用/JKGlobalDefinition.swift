@@ -13,13 +13,12 @@ func iOS8()->Bool{return((UIDevice.current.systemVersion as NSString).floatValue
 func iOS10()->Bool{return((UIDevice.current.systemVersion as NSString).floatValue >= 10.0)}
 func JKScreenWidth() -> CGFloat{return UIScreen.main.bounds.size.width}
 func JKScreenHeight() -> CGFloat{return UIScreen.main.bounds.size.height}
-func JKMaxYOfView(_ view: UIView) -> CGFloat{return view.frame.origin.y + view.frame.size.height}
 
-func JKColor_RGB_Float(r:Float,g:Float,b:Float) -> UIColor {
-    return UIColor.init(colorLiteralRed: r, green: g, blue: b, alpha: 1.0)
+func JKColor_RGB_Float(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
+    return UIColor.init(red: r, green: g, blue: b, alpha: 1.0)
 }
-func JKColor_RGB(r:Float,g:Float,b:Float) -> UIColor {
-    return UIColor.init(colorLiteralRed: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
+func JKColor_RGB(r:Int,g:Int,b:Int) -> UIColor {
+    return UIColor.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: 1.0)
 }
 
 
