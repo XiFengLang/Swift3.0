@@ -8,33 +8,8 @@
 
 import Foundation
 
-// 通过类别给对象拓展属性，使用Runtime绑定属性值
+
 extension ViewController {
-    
-//    var jkPro: String? {
-//        set {
-//            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-//        }
-//        
-//        get {
-//            return objc_getAssociatedObject(self, "key") as? String
-//        }
-//    }
-    
-    
-//    var jkPro: String? {
-//        set {
-//            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-//        }
-//        
-//        get {
-//            let obj = objc_getAssociatedObject(self, "key") as? String
-//            if obj != nil {
-//                return obj
-//            }
-//            return String()
-//        }
-//    }
     
     var jkPro: String? {
         set {

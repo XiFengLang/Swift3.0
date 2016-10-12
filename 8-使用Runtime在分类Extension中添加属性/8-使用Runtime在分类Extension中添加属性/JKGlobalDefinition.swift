@@ -17,7 +17,7 @@ func JK_PI() -> CGFloat {return CGFloat(M_PI)}
 func JK_PI_2() -> CGFloat {return CGFloat(M_PI_2)}
 
 
-func JKLOG<T>(_ log : T,className: String = #file,methodName: String = #function, lineNumber: Int = #line){
+func JKLOG<T>(_ log : T?,className: String = #file,methodName: String = #function, lineNumber: Int = #line){
     #if DEBUG
         let filePath = className as NSString
         let filePath_copy = filePath.lastPathComponent as NSString

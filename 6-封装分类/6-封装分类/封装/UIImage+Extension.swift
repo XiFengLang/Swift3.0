@@ -17,6 +17,11 @@ enum UIImageContentMode: Int {
 
 extension UIImage {
     
+    class func image(named name: String) -> UIImage? {
+        return UIImage.init(named: name)
+    }
+    
+    
     /// 给图片倒圆角
     func rounding() -> UIImage {
         let newImage = UIImage.roundingImage(image: self, size: self.size)
@@ -131,37 +136,41 @@ extension UIImage {
     
     /// 用UIColor绘制圆角图
     class func roundingImage(withColor color: UIColor, size: CGSize, radius: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContext(size)
+        let targetSize = CGSize.init(width: UIScreen.main.scale * size.width,
+                                     height: UIScreen.main.scale * size.height)
+        let targetRadius = UIScreen.main.scale * radius
+        
+        UIGraphicsBeginImageContext(targetSize)
         let beziePath = UIBezierPath.init()
-        beziePath.move(to: CGPoint.init(x: radius, y: 0))
-        beziePath.addLine(to: CGPoint.init(x: size.width - radius, y: 0))
-        beziePath.addArc(withCenter: CGPoint.init(x: size.width - radius,
-                                                  y: radius),
-                         radius: radius,
+        beziePath.move(to: CGPoint.init(x: targetRadius, y: 0))
+        beziePath.addLine(to: CGPoint.init(x: targetSize.width - targetRadius, y: 0))
+        beziePath.addArc(withCenter: CGPoint.init(x: targetSize.width - targetRadius,
+                                                  y: targetRadius),
+                         radius: targetRadius,
                          startAngle: JK_PI() * 1.5,
                          endAngle: JK_PI() * 2.0,
                          clockwise: true)
         
-        beziePath.addLine(to: CGPoint.init(x: size.width,
-                                           y: size.height - radius))
-        beziePath.addArc(withCenter: CGPoint.init(x: size.width - radius,
-                                                  y: size.height - radius),
-                         radius: radius,
+        beziePath.addLine(to: CGPoint.init(x: targetSize.width,
+                                           y: targetSize.height - targetRadius))
+        beziePath.addArc(withCenter: CGPoint.init(x: targetSize.width - targetRadius,
+                                                  y: targetSize.height - targetRadius),
+                         radius: targetRadius,
                          startAngle: 0,
                          endAngle: JK_PI() * 0.5,
                          clockwise: true)
         
-        beziePath.addLine(to: CGPoint.init(x: radius, y: size.height))
-        beziePath.addArc(withCenter: CGPoint.init(x: radius,
-                                                  y: size.height - radius),
-                         radius: radius,
+        beziePath.addLine(to: CGPoint.init(x: targetRadius, y: targetSize.height))
+        beziePath.addArc(withCenter: CGPoint.init(x: targetRadius,
+                                                  y: targetSize.height - targetRadius),
+                         radius: targetRadius,
                          startAngle: JK_PI() * 0.5,
                          endAngle: JK_PI(),
                          clockwise: true)
         
-        beziePath.addLine(to: CGPoint.init(x: 0, y: radius))
-        beziePath.addArc(withCenter: CGPoint.init(x: radius, y: radius),
-                         radius: radius,
+        beziePath.addLine(to: CGPoint.init(x: 0, y: targetRadius))
+        beziePath.addArc(withCenter: CGPoint.init(x: targetRadius, y: targetRadius),
+                         radius: targetRadius,
                          startAngle: JK_PI(),
                          endAngle: JK_PI() * 1.5,
                          clockwise: true)
@@ -175,45 +184,49 @@ extension UIImage {
     
     /// 带边框的圆角图
     class func roundingImage(withColor color: UIColor, size: CGSize, radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat) -> UIImage {
+        let targetSize = CGSize.init(width: UIScreen.main.scale * size.width,
+                                     height: UIScreen.main.scale * size.height)
+        let targetRadius = UIScreen.main.scale * radius
+        let targetBorderWith = UIScreen.main.scale * borderWidth
         
-        UIGraphicsBeginImageContext(size)
-        let pointA = CGPoint.init(x: radius, y: borderWidth)
-        let pointB = CGPoint.init(x: size.width - radius, y: borderWidth)
+        UIGraphicsBeginImageContext(targetSize)
+        let pointA = CGPoint.init(x: targetRadius, y: targetBorderWith)
+        let pointB = CGPoint.init(x: targetSize.width - targetRadius, y: targetBorderWith)
         
-        let centerA = CGPoint.init(x: size.width - radius, y: radius)
-        let pointC = CGPoint.init(x: size.width - borderWidth, y: size.height - radius)
+        let centerA = CGPoint.init(x: targetSize.width - targetRadius, y: targetRadius)
+        let pointC = CGPoint.init(x: targetSize.width - targetBorderWith, y: targetSize.height - targetRadius)
         
-        let centerB = CGPoint.init(x: size.width - radius, y: size.height - radius)
-        let pointD = CGPoint.init(x: radius, y: size.height - borderWidth)
+        let centerB = CGPoint.init(x: targetSize.width - targetRadius, y: targetSize.height - targetRadius)
+        let pointD = CGPoint.init(x: targetRadius, y: targetSize.height - targetBorderWith)
         
-        let centerC = CGPoint.init(x: radius, y: size.height - radius)
-        let pointE = CGPoint.init(x: borderWidth, y: radius)
+        let centerC = CGPoint.init(x: targetRadius, y: targetSize.height - targetRadius)
+        let pointE = CGPoint.init(x: targetBorderWith, y: targetRadius)
         
-        let centerD = CGPoint.init(x: radius, y: radius)
+        let centerD = CGPoint.init(x: targetRadius, y: targetRadius)
         
         let beziePath = UIBezierPath.init()
         beziePath.move(to: pointA)
         beziePath.addLine(to: pointB)
         beziePath.addArc(withCenter: centerA,
-                         radius: radius - borderWidth,
+                         radius: targetRadius - targetBorderWith,
                          startAngle: JK_PI_2() * 3,
                          endAngle: JK_PI_2() * 4,
                          clockwise: true)
         beziePath.addLine(to: pointC)
         beziePath.addArc(withCenter: centerB,
-                         radius: radius - borderWidth,
+                         radius: targetRadius - targetBorderWith,
                          startAngle: 0,
                          endAngle: JK_PI_2(),
                          clockwise: true)
         beziePath.addLine(to: pointD)
         beziePath.addArc(withCenter: centerC,
-                         radius: radius - borderWidth,
+                         radius: targetRadius - targetBorderWith,
                          startAngle: JK_PI_2(),
                          endAngle: JK_PI(),
                          clockwise: true)
         beziePath.addLine(to: pointE)
         beziePath.addArc(withCenter: centerD,
-                         radius: radius - borderWidth,
+                         radius: targetRadius - targetBorderWith,
                          startAngle: JK_PI(),
                          endAngle: JK_PI_2() * 3,
                          clockwise: true)
@@ -221,7 +234,7 @@ extension UIImage {
         beziePath.fill()
         
         borderColor.setStroke()
-        beziePath.lineWidth = borderWidth
+        beziePath.lineWidth = targetBorderWith
         beziePath.stroke()
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()

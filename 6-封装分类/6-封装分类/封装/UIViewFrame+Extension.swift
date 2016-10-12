@@ -71,6 +71,16 @@ extension UIView {
         }
     }
     
+    
+    public var size: CGSize {
+        set {
+            self.frame.size = newValue
+        }
+        get {
+            return self.frame.size
+        }
+    }
+    
     public var centerY: CGFloat {
         set(newValue) {
             var tempCenter = self.center

@@ -15,9 +15,9 @@ func JKScreenWidth() -> CGFloat{return UIScreen.main.bounds.size.width}
 func JKScreenHeight() -> CGFloat{return UIScreen.main.bounds.size.height}
 func JK_PI() -> CGFloat {return CGFloat(M_PI)}
 func JK_PI_2() -> CGFloat {return CGFloat(M_PI_2)}
+func JKWidth(_ width: CGFloat) -> CGFloat {return width * JKScreenWidth() / 320}
 
-
-func JKLOG<T>(_ log : T,className: String = #file,methodName: String = #function, lineNumber: Int = #line){
+func JKLOG<T>(_ log : T?,className: String = #file,methodName: String = #function, lineNumber: Int = #line){
     #if DEBUG
         let filePath = className as NSString
         let filePath_copy = filePath.lastPathComponent as NSString

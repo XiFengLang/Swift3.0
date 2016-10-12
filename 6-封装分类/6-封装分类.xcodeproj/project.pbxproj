@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F02E5291DAC9F1400951504 /* UIView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02E5281DAC9F1400951504 /* UIView+Factory.swift */; };
 		9F02E52B1DAC9FAB00951504 /* JKThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02E52A1DAC9FAB00951504 /* JKThen.swift */; };
+		9F3B6E7F1DAE47EB000067BB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6E7E1DAE47EB000067BB /* String+Extension.swift */; };
 		9FB05FF21DACB47C0019AFE7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */; };
 		9FC56E8D1DABA4BD00F0CA20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56E8C1DABA4BD00F0CA20 /* AppDelegate.swift */; };
 		9FC56E8F1DABA4BD00F0CA20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56E8E1DABA4BD00F0CA20 /* ViewController.swift */; };
@@ -22,11 +23,14 @@
 		9FC56EA81DABA77700F0CA20 /* UIViewFrame+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */; };
 		9FC56EAD1DABA8D300F0CA20 /* JKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EAA1DABA8D300F0CA20 /* JKBaseViewController.swift */; };
 		9FC56EAE1DABA8D300F0CA20 /* JKGlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC56EAB1DABA8D300F0CA20 /* JKGlobalDefinition.swift */; };
+		9FFC39DD1DAE307A002FE5D5 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC39DC1DAE307A002FE5D5 /* UIBarButtonItem+Extension.swift */; };
+		9FFC39DF1DAE309E002FE5D5 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC39DE1DAE309E002FE5D5 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F02E5281DAC9F1400951504 /* UIView+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Factory.swift"; sourceTree = "<group>"; };
 		9F02E52A1DAC9FAB00951504 /* JKThen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKThen.swift; sourceTree = "<group>"; };
+		9F3B6E7E1DAE47EB000067BB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9FC56E891DABA4BD00F0CA20 /* 6-封装分类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "6-封装分类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC56E8C1DABA4BD00F0CA20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewFrame+Extension.swift"; sourceTree = "<group>"; };
 		9FC56EAA1DABA8D300F0CA20 /* JKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBaseViewController.swift; sourceTree = "<group>"; };
 		9FC56EAB1DABA8D300F0CA20 /* JKGlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGlobalDefinition.swift; sourceTree = "<group>"; };
+		9FFC39DC1DAE307A002FE5D5 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		9FFC39DE1DAE309E002FE5D5 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				9FC56EA41DABA77700F0CA20 /* UIViewFrame+Extension.swift */,
 				9F02E5281DAC9F1400951504 /* UIView+Factory.swift */,
 				9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */,
+				9FFC39DC1DAE307A002FE5D5 /* UIBarButtonItem+Extension.swift */,
+				9FFC39DE1DAE309E002FE5D5 /* UITableView+Extension.swift */,
+				9F3B6E7E1DAE47EB000067BB /* String+Extension.swift */,
 			);
 			path = "封装";
 			sourceTree = "<group>";
@@ -192,9 +201,12 @@
 				9F02E5291DAC9F1400951504 /* UIView+Factory.swift in Sources */,
 				9FC56EAD1DABA8D300F0CA20 /* JKBaseViewController.swift in Sources */,
 				9FC56EA61DABA77700F0CA20 /* UIImage+Extension.swift in Sources */,
+				9FFC39DF1DAE309E002FE5D5 /* UITableView+Extension.swift in Sources */,
 				9FC56EA81DABA77700F0CA20 /* UIViewFrame+Extension.swift in Sources */,
 				9FC56E9F1DABA51200F0CA20 /* RuntimeCategory.swift in Sources */,
 				9F02E52B1DAC9FAB00951504 /* JKThen.swift in Sources */,
+				9F3B6E7F1DAE47EB000067BB /* String+Extension.swift in Sources */,
+				9FFC39DD1DAE307A002FE5D5 /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

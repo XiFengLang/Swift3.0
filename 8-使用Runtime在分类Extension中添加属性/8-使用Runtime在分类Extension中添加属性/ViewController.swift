@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.jkPro = "通过类别拓展的属性"
-        NSLog(self.jkPro!)
+        NSLog(self.jkPro!)// 对nil进行解包会崩溃
+        JKLOG(self.jkPro!)
         JKLOG(self.jkPro)
     }
 }

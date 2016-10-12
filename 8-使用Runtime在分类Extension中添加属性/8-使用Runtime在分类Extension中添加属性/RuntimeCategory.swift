@@ -22,35 +22,23 @@ extension ViewController {
 //        }
 //    }
     
+
     
-    // 平常写法加判断【不推荐】
-//    var jkPro: String? {
-//        set {
-//            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-//        }
-//        
-//        get {
-//            let obj = objc_getAssociatedObject(self, "key") as? String
-//            if obj != nil {
-//                return obj
-//            }
-//            return String()
-//        }
-//    }
-    
-    
+
     // 改进写法【推荐】
+    
+    struct RuntimeKey {
+        static let jkKey = UnsafeRawPointer.init(bitPattern: "JKKey".hashValue)
+        /// ...其他Key声明
+    }
+    
     var jkPro: String? {
         set {
-            let key: UnsafeRawPointer! = UnsafeRawPointer.init(bitPattern: "key".hashValue)
-            objc_setAssociatedObject(self, key, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, ViewController.RuntimeKey.jkKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
         
         get {
-            let key: UnsafeRawPointer! = UnsafeRawPointer.init(bitPattern: "key".hashValue)
-            let obj: String? = objc_getAssociatedObject(self, key) as? String
-            return obj
+            return objc_getAssociatedObject(self, ViewController.RuntimeKey.jkKey) as? String
         }
     }
-    
 }
