@@ -13,6 +13,7 @@
 		9FFC39CE1DADE1CA002FE5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC39CD1DADE1CA002FE5D5 /* Assets.xcassets */; };
 		9FFC39D11DADE1CA002FE5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC39CF1DADE1CA002FE5D5 /* LaunchScreen.storyboard */; };
 		9FFC39D91DADE1D5002FE5D5 /* RuntimeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC39D81DADE1D5002FE5D5 /* RuntimeCategory.swift */; };
+		9FFC39DB1DADFE77002FE5D5 /* JKGlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC39DA1DADFE77002FE5D5 /* JKGlobalDefinition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9FFC39D01DADE1CA002FE5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFC39D21DADE1CA002FE5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFC39D81DADE1D5002FE5D5 /* RuntimeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeCategory.swift; sourceTree = "<group>"; };
+		9FFC39DA1DADFE77002FE5D5 /* JKGlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGlobalDefinition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9FFC39C61DADE1CA002FE5D5 /* AppDelegate.swift */,
 				9FFC39C81DADE1CA002FE5D5 /* ViewController.swift */,
 				9FFC39D81DADE1D5002FE5D5 /* RuntimeCategory.swift */,
+				9FFC39DA1DADFE77002FE5D5 /* JKGlobalDefinition.swift */,
 				9FFC39CA1DADE1CA002FE5D5 /* Main.storyboard */,
 				9FFC39CD1DADE1CA002FE5D5 /* Assets.xcassets */,
 				9FFC39CF1DADE1CA002FE5D5 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				9FFC39D91DADE1D5002FE5D5 /* RuntimeCategory.swift in Sources */,
 				9FFC39C91DADE1CA002FE5D5 /* ViewController.swift in Sources */,
+				9FFC39DB1DADFE77002FE5D5 /* JKGlobalDefinition.swift in Sources */,
 				9FFC39C71DADE1CA002FE5D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				9FFC39D71DADE1CA002FE5D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

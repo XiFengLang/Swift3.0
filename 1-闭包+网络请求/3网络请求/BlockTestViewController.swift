@@ -27,13 +27,16 @@ class BlockTestViewController: UIViewController {
             print(str)
         }
         
+        
+        // 使用Runtime objc_setAssociatedObject绑定Block
         // 编译时会报错，Showing Recent Issues Command failed due to signal: Segmentation fault: 11
         //objc_setAssociatedObject(self, "key", myBlock, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         
         // 解决方案
-        objc_setAssociatedObject(self, "key", myBlock as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        let key = UnsafeRawPointer.init(bitPattern: "key".hashValue)
+        objc_setAssociatedObject(self, key, myBlock as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         
-        let tempBlock:RuntimeBlock = objc_getAssociatedObject(self, "key") as! RuntimeBlock
+        let tempBlock:RuntimeBlock = objc_getAssociatedObject(self, key) as! RuntimeBlock
         tempBlock("Swift-Runtime-objc_setAssociatedObject")
     }
     

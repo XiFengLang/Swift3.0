@@ -132,12 +132,6 @@ extension JKLocationManager:AMapSearchDelegate {
         request.address = address
         request.city = city
         self.search.aMapGeocodeSearch(request)
-        
-
-        // 用runtime绑定Block，绑定字符串无事，编译时报错Showing Recent Issues Command failed due to signal: Segmentation fault: 11
-        // 解决方案：completionHandler as AnyObject
-        // objc_setAssociatedObject(self, "key", completionHandler as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-        
         self.geocodeCompletionHandler = completionHandler
     }
     
