@@ -14,10 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.jkPro = "通过类别拓展的属性"
         NSLog(self.jkPro!)
-        // 此处用JKLOG有BUG，待解决
         
         
         print("标记")
+        
+        
+        
+        
+        
+        
         
 //        let text = "大黄金卡加的我回家看的黄金卡案件和卡号及大家很快哈哈啊环境的骄傲的健康大加快大家很快大家看大海阿卡丽几哈大家哈达"
         

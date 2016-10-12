@@ -11,6 +11,7 @@ import Foundation
 // 通过类别给对象拓展属性，使用Runtime绑定属性值
 extension ViewController {
     
+    // 平常写法
 //    var jkPro: String? {
 //        set {
 //            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
@@ -22,6 +23,7 @@ extension ViewController {
 //    }
     
     
+    // 平常写法加判断
 //    var jkPro: String? {
 //        set {
 //            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
@@ -36,6 +38,8 @@ extension ViewController {
 //        }
 //    }
     
+    
+    // 改进写法(推荐)
     var jkPro: String? {
         set {
             let key: UnsafeRawPointer! = UnsafeRawPointer.init(bitPattern: "key".hashValue)
