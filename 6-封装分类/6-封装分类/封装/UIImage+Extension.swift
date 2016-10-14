@@ -68,45 +68,47 @@ extension UIImage {
     /// 重新绘制对应大小的图片
     func resize(withSize size: CGSize, contentModel: UIImageContentMode) -> UIImage {
         var scale = UIScreen.main.scale
-        UIGraphicsBeginImageContext(size)
+        let targetSize = CGSize.init(width: size.width * scale, height: size.height * scale)
+        UIGraphicsBeginImageContext(targetSize)
         var bounds = CGRect.zero
         switch contentModel {
         case .scaleToFill:
-            bounds.size = size
+            bounds.size = targetSize
             break
         case .scaleAspectFit:
             scale = self.size.width / self.size.height
-            let tempScale = size.width / size.height
+            let tempScale = targetSize.width / targetSize.height
             if scale < tempScale {
-                bounds.size = CGSize.init(width: size.height * scale, height: size.height)
-                bounds.origin.x = (size.width - bounds.size.width) * 0.5
+                bounds.size = CGSize.init(width: targetSize.height * scale, height: targetSize.height)
+                bounds.origin.x = (targetSize.width - bounds.size.width) * 0.5
             }else {
-                bounds.size = CGSize.init(width: size.width, height: size.width * scale)
-                bounds.origin.x = (size.height - bounds.size.height) * 0.5
+                bounds.size = CGSize.init(width: targetSize.width, height: targetSize.width * scale)
+                bounds.origin.x = (targetSize.height - bounds.size.height) * 0.5
             }
             break
         case .scaleAspectFill:
             scale = self.size.width / self.size.height
-            let tempScale = size.width / size.height
+            let tempScale = targetSize.width / targetSize.height
             if scale > tempScale {
-                bounds.size = CGSize.init(width: size.height * scale, height: size.height)
-                bounds.origin.x = (size.width - bounds.size.width) * 0.5
+                bounds.size = CGSize.init(width: targetSize.height * scale, height: targetSize.height)
+                bounds.origin.x = (targetSize.width - bounds.size.width) * 0.5
             }else {
-                bounds.size = CGSize.init(width: size.width, height: size.width * scale)
-                bounds.origin.x = (size.height - bounds.size.height) * 0.5
+                bounds.size = CGSize.init(width: targetSize.width, height: targetSize.width * scale)
+                bounds.origin.x = (targetSize.height - bounds.size.height) * 0.5
             }
             break
             
         case .bottom:
                 scale = self.size.width / self.size.height
-                bounds.size = CGSize.init(width: size.width, height: size.width * scale)
-                bounds.origin.y = size.height - bounds.size.height
+                bounds.size = CGSize.init(width: targetSize.width, height: targetSize.width * scale)
+                bounds.origin.y = targetSize.height - bounds.size.height
             break
         }
         
         self.draw(in: bounds)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
         if (newImage != nil) {
             return newImage!
         }
@@ -239,6 +241,7 @@ extension UIImage {
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
         return newImage!
     }
 }

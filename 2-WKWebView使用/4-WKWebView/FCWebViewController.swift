@@ -79,8 +79,8 @@ class FCWebViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let Url = Bundle.main.url(forResource: "test", withExtension: "html")
-        //   let Url = URL.init(string: "https://www.baidu.com")
+//        let Url = Bundle.main.url(forResource: "test", withExtension: "html")
+           let Url = URL.init(string: "https://www.baidu.com")
         let request = URLRequest.init(url: Url!)
         _ = self.webView?.load(request)
     }

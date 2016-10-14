@@ -15,9 +15,11 @@ class ViewController: UIViewController {
         self.jkPro = "通过类别拓展的属性"
         JKLOG(self.jkPro!)
         
-        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "iTem", style: .plain, target: nil, action: nil)
         
+        _ = UIColor.RGB("#ff21af64")
+        _ = UIColor.RGB("#21af64")
+        _ = UIColor.RGB("0x21af64")
         
 //        let text = "大黄金卡加的我回家看的黄金卡案件和卡号及大家很快哈哈啊环境的骄傲的健康大加快大家很快大家看大海阿卡丽几哈大家哈达"
         
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
 //                                width: 200, height: 50)
         
 //        let image = UIImage.image(withColor: UIColor.blue, size: CGSize.init(width: 300, height: 300))
+        
         
 //        let image_R = image?.rounding()
         
