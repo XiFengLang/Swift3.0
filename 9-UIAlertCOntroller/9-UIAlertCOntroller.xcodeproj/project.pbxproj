@@ -16,6 +16,8 @@
 		9F3B6EC51DAF923C000067BB /* JKGlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EC31DAF923C000067BB /* JKGlobalDefinition.swift */; };
 		9F3B6EC81DAF92E2000067BB /* JKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EC71DAF92E2000067BB /* JKAlertManager.swift */; };
 		9F3B6ECA1DAF9DAE000067BB /* JKThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EC91DAF9DAE000067BB /* JKThen.swift */; };
+		9F3B6EDF1DB4B460000067BB /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EDE1DB4B460000067BB /* UIWindow+Extension.swift */; };
+		9F3B6EE11DB4B706000067BB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EE01DB4B706000067BB /* Array+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9F3B6EC31DAF923C000067BB /* JKGlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGlobalDefinition.swift; sourceTree = "<group>"; };
 		9F3B6EC71DAF92E2000067BB /* JKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAlertManager.swift; sourceTree = "<group>"; };
 		9F3B6EC91DAF9DAE000067BB /* JKThen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKThen.swift; sourceTree = "<group>"; };
+		9F3B6EDE1DB4B460000067BB /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		9F3B6EE01DB4B706000067BB /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		9F3B6EC11DAF923C000067BB /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
+				9F3B6EDE1DB4B460000067BB /* UIWindow+Extension.swift */,
+				9F3B6EE01DB4B706000067BB /* Array+Extension.swift */,
 				9F3B6EC91DAF9DAE000067BB /* JKThen.swift */,
 				9F3B6EC21DAF923C000067BB /* JKBaseViewController.swift */,
 				9F3B6EC31DAF923C000067BB /* JKGlobalDefinition.swift */,
@@ -169,10 +175,12 @@
 			files = (
 				9F3B6EC41DAF923C000067BB /* JKBaseViewController.swift in Sources */,
 				9F3B6EB21DAF9227000067BB /* ViewController.swift in Sources */,
+				9F3B6EDF1DB4B460000067BB /* UIWindow+Extension.swift in Sources */,
 				9F3B6EC51DAF923C000067BB /* JKGlobalDefinition.swift in Sources */,
 				9F3B6EB01DAF9227000067BB /* AppDelegate.swift in Sources */,
 				9F3B6EC81DAF92E2000067BB /* JKAlertManager.swift in Sources */,
 				9F3B6ECA1DAF9DAE000067BB /* JKThen.swift in Sources */,
+				9F3B6EE11DB4B706000067BB /* Array+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
