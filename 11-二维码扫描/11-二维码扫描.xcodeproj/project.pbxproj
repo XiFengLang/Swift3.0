@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F3B6F141DB5BD96000067BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F131DB5BD96000067BB /* AppDelegate.swift */; };
+		9F3B6F161DB5BD96000067BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F151DB5BD96000067BB /* ViewController.swift */; };
+		9F3B6F191DB5BD96000067BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F171DB5BD96000067BB /* Main.storyboard */; };
+		9F3B6F1B1DB5BD96000067BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F1A1DB5BD96000067BB /* Assets.xcassets */; };
+		9F3B6F1E1DB5BD96000067BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F1C1DB5BD96000067BB /* LaunchScreen.storyboard */; };
+		9F3B6F261DB5BF92000067BB /* JKQRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F251DB5BF92000067BB /* JKQRScanViewController.swift */; };
+		9F3B6F2B1DB5BFBB000067BB /* JKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F281DB5BFBB000067BB /* JKBaseViewController.swift */; };
+		9F3B6F2C1DB5BFBB000067BB /* JKGlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F291DB5BFBB000067BB /* JKGlobalDefinition.swift */; };
+		9F3B6F2D1DB5BFBB000067BB /* JKThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F2A1DB5BFBB000067BB /* JKThen.swift */; };
+		9F3B6F2F1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F2E1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift */; };
+		9F3B6F311DB5CDB0000067BB /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F301DB5CDB0000067BB /* UIWindow+Extension.swift */; };
+		9F3B6F331DB5D657000067BB /* JKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F321DB5D657000067BB /* JKAlertManager.swift */; };
+		9F3B6F371DB5DA39000067BB /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F361DB5DA39000067BB /* UIApplication+Extension.swift */; };
+		9F3B6F391DB5E958000067BB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F381DB5E958000067BB /* Array+Extension.swift */; };
+		9F3B6F3B1DB629F8000067BB /* JKQRScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F3B6F101DB5BD96000067BB /* 11-二维码扫描.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "11-二维码扫描.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3B6F131DB5BD96000067BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F3B6F151DB5BD96000067BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F3B6F181DB5BD96000067BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F3B6F1A1DB5BD96000067BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F3B6F1D1DB5BD96000067BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F3B6F1F1DB5BD96000067BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3B6F251DB5BF92000067BB /* JKQRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKQRScanViewController.swift; sourceTree = "<group>"; };
+		9F3B6F281DB5BFBB000067BB /* JKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBaseViewController.swift; sourceTree = "<group>"; };
+		9F3B6F291DB5BFBB000067BB /* JKGlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGlobalDefinition.swift; sourceTree = "<group>"; };
+		9F3B6F2A1DB5BFBB000067BB /* JKThen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKThen.swift; sourceTree = "<group>"; };
+		9F3B6F2E1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAppAuthorizationRequest.swift; sourceTree = "<group>"; };
+		9F3B6F301DB5CDB0000067BB /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		9F3B6F321DB5D657000067BB /* JKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAlertManager.swift; sourceTree = "<group>"; };
+		9F3B6F361DB5DA39000067BB /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		9F3B6F381DB5E958000067BB /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JKQRScanLine@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F3B6F0D1DB5BD96000067BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F3B6F071DB5BD96000067BB = {
+			isa = PBXGroup;
+			children = (
+				9F3B6F121DB5BD96000067BB /* 11-二维码扫描 */,
+				9F3B6F111DB5BD96000067BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F3B6F111DB5BD96000067BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B6F101DB5BD96000067BB /* 11-二维码扫描.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F3B6F121DB5BD96000067BB /* 11-二维码扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B6F271DB5BFBB000067BB /* 通用 */,
+				9F3B6F131DB5BD96000067BB /* AppDelegate.swift */,
+				9F3B6F151DB5BD96000067BB /* ViewController.swift */,
+				9F3B6F251DB5BF92000067BB /* JKQRScanViewController.swift */,
+				9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */,
+				9F3B6F171DB5BD96000067BB /* Main.storyboard */,
+				9F3B6F1A1DB5BD96000067BB /* Assets.xcassets */,
+				9F3B6F1C1DB5BD96000067BB /* LaunchScreen.storyboard */,
+				9F3B6F1F1DB5BD96000067BB /* Info.plist */,
+			);
+			path = "11-二维码扫描";
+			sourceTree = "<group>";
+		};
+		9F3B6F271DB5BFBB000067BB /* 通用 */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B6F321DB5D657000067BB /* JKAlertManager.swift */,
+				9F3B6F301DB5CDB0000067BB /* UIWindow+Extension.swift */,
+				9F3B6F281DB5BFBB000067BB /* JKBaseViewController.swift */,
+				9F3B6F291DB5BFBB000067BB /* JKGlobalDefinition.swift */,
+				9F3B6F2A1DB5BFBB000067BB /* JKThen.swift */,
+				9F3B6F2E1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift */,
+				9F3B6F381DB5E958000067BB /* Array+Extension.swift */,
+				9F3B6F361DB5DA39000067BB /* UIApplication+Extension.swift */,
+			);
+			path = "通用";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F3B6F0F1DB5BD96000067BB /* 11-二维码扫描 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F3B6F221DB5BD96000067BB /* Build configuration list for PBXNativeTarget "11-二维码扫描" */;
+			buildPhases = (
+				9F3B6F0C1DB5BD96000067BB /* Sources */,
+				9F3B6F0D1DB5BD96000067BB /* Frameworks */,
+				9F3B6F0E1DB5BD96000067BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "11-二维码扫描";
+			productName = "11-二维码扫描";
+			productReference = 9F3B6F101DB5BD96000067BB /* 11-二维码扫描.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F3B6F081DB5BD96000067BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JK;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "蒋鹏";
+				TargetAttributes = {
+					9F3B6F0F1DB5BD96000067BB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 756Y4UTJUH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F3B6F0B1DB5BD96000067BB /* Build configuration list for PBXProject "11-二维码扫描" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F3B6F071DB5BD96000067BB;
+			productRefGroup = 9F3B6F111DB5BD96000067BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F3B6F0F1DB5BD96000067BB /* 11-二维码扫描 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F3B6F0E1DB5BD96000067BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3B6F1E1DB5BD96000067BB /* LaunchScreen.storyboard in Resources */,
+				9F3B6F3B1DB629F8000067BB /* JKQRScanLine@2x.png in Resources */,
+				9F3B6F1B1DB5BD96000067BB /* Assets.xcassets in Resources */,
+				9F3B6F191DB5BD96000067BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F3B6F0C1DB5BD96000067BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3B6F2B1DB5BFBB000067BB /* JKBaseViewController.swift in Sources */,
+				9F3B6F311DB5CDB0000067BB /* UIWindow+Extension.swift in Sources */,
+				9F3B6F161DB5BD96000067BB /* ViewController.swift in Sources */,
+				9F3B6F391DB5E958000067BB /* Array+Extension.swift in Sources */,
+				9F3B6F141DB5BD96000067BB /* AppDelegate.swift in Sources */,
+				9F3B6F2F1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift in Sources */,
+				9F3B6F2C1DB5BFBB000067BB /* JKGlobalDefinition.swift in Sources */,
+				9F3B6F261DB5BF92000067BB /* JKQRScanViewController.swift in Sources */,
+				9F3B6F2D1DB5BFBB000067BB /* JKThen.swift in Sources */,
+				9F3B6F371DB5DA39000067BB /* UIApplication+Extension.swift in Sources */,
+				9F3B6F331DB5D657000067BB /* JKAlertManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F3B6F171DB5BD96000067BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F3B6F181DB5BD96000067BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F3B6F1C1DB5BD96000067BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F3B6F1D1DB5BD96000067BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F3B6F201DB5BD96000067BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F3B6F211DB5BD96000067BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F3B6F231DB5BD96000067BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 756Y4UTJUH;
+				INFOPLIST_FILE = "11-二维码扫描/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.XiFengLang.-1------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F3B6F241DB5BD96000067BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 756Y4UTJUH;
+				INFOPLIST_FILE = "11-二维码扫描/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.XiFengLang.-1------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F3B6F0B1DB5BD96000067BB /* Build configuration list for PBXProject "11-二维码扫描" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3B6F201DB5BD96000067BB /* Debug */,
+				9F3B6F211DB5BD96000067BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F3B6F221DB5BD96000067BB /* Build configuration list for PBXNativeTarget "11-二维码扫描" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3B6F231DB5BD96000067BB /* Debug */,
+				9F3B6F241DB5BD96000067BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F3B6F081DB5BD96000067BB /* Project object */;
+}

@@ -9,11 +9,11 @@
 import UIKit
 
 extension UIWindow {
-    public class func currentViewController() -> UIViewController {
+    public func currentViewController() -> UIViewController {
         return self.findBestViewController(UIApplication.shared.keyWindow?.rootViewController)
     }
     
-    private class func findBestViewController(_ vc: UIViewController?) -> UIViewController {
+    private func findBestViewController(_ vc: UIViewController?) -> UIViewController {
         if ((vc?.presentedViewController) != nil) {
             return self.findBestViewController(vc?.presentedViewController)
         } else if (vc?.isKind(of: UISplitViewController.classForCoder()) == true) {
