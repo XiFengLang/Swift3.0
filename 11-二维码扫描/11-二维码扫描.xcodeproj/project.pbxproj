@@ -21,7 +21,10 @@
 		9F3B6F331DB5D657000067BB /* JKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F321DB5D657000067BB /* JKAlertManager.swift */; };
 		9F3B6F371DB5DA39000067BB /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F361DB5DA39000067BB /* UIApplication+Extension.swift */; };
 		9F3B6F391DB5E958000067BB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F381DB5E958000067BB /* Array+Extension.swift */; };
-		9F3B6F3B1DB629F8000067BB /* JKQRScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */; };
+		9F3B6F3D1DB71C4E000067BB /* JKQRCodeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F3C1DB71C4E000067BB /* JKQRCodeTool.swift */; };
+		9F3B6F3F1DB72ABC000067BB /* JKSwiftGitHub.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F3E1DB72ABC000067BB /* JKSwiftGitHub.png */; };
+		9F3B6F431DB77319000067BB /* JKQRScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F421DB77319000067BB /* JKQRScanLine@2x.png */; };
+		9F3B6F451DB7734A000067BB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6F441DB7734A000067BB /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +44,10 @@
 		9F3B6F321DB5D657000067BB /* JKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAlertManager.swift; sourceTree = "<group>"; };
 		9F3B6F361DB5DA39000067BB /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		9F3B6F381DB5E958000067BB /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JKQRScanLine@2x.png"; sourceTree = "<group>"; };
+		9F3B6F3C1DB71C4E000067BB /* JKQRCodeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKQRCodeTool.swift; sourceTree = "<group>"; };
+		9F3B6F3E1DB72ABC000067BB /* JKSwiftGitHub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JKSwiftGitHub.png; sourceTree = "<group>"; };
+		9F3B6F421DB77319000067BB /* JKQRScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JKQRScanLine@2x.png"; sourceTree = "<group>"; };
+		9F3B6F441DB7734A000067BB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,12 @@
 				9F3B6F131DB5BD96000067BB /* AppDelegate.swift */,
 				9F3B6F151DB5BD96000067BB /* ViewController.swift */,
 				9F3B6F251DB5BF92000067BB /* JKQRScanViewController.swift */,
-				9F3B6F3A1DB629F8000067BB /* JKQRScanLine@2x.png */,
+				9F3B6F421DB77319000067BB /* JKQRScanLine@2x.png */,
+				9F3B6F3C1DB71C4E000067BB /* JKQRCodeTool.swift */,
+				9F3B6F3E1DB72ABC000067BB /* JKSwiftGitHub.png */,
 				9F3B6F171DB5BD96000067BB /* Main.storyboard */,
 				9F3B6F1A1DB5BD96000067BB /* Assets.xcassets */,
+				9F3B6F441DB7734A000067BB /* logo.png */,
 				9F3B6F1C1DB5BD96000067BB /* LaunchScreen.storyboard */,
 				9F3B6F1F1DB5BD96000067BB /* Info.plist */,
 			);
@@ -164,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3B6F1E1DB5BD96000067BB /* LaunchScreen.storyboard in Resources */,
-				9F3B6F3B1DB629F8000067BB /* JKQRScanLine@2x.png in Resources */,
+				9F3B6F451DB7734A000067BB /* logo.png in Resources */,
+				9F3B6F3F1DB72ABC000067BB /* JKSwiftGitHub.png in Resources */,
+				9F3B6F431DB77319000067BB /* JKQRScanLine@2x.png in Resources */,
 				9F3B6F1B1DB5BD96000067BB /* Assets.xcassets in Resources */,
 				9F3B6F191DB5BD96000067BB /* Main.storyboard in Resources */,
 			);
@@ -180,6 +191,7 @@
 				9F3B6F2B1DB5BFBB000067BB /* JKBaseViewController.swift in Sources */,
 				9F3B6F311DB5CDB0000067BB /* UIWindow+Extension.swift in Sources */,
 				9F3B6F161DB5BD96000067BB /* ViewController.swift in Sources */,
+				9F3B6F3D1DB71C4E000067BB /* JKQRCodeTool.swift in Sources */,
 				9F3B6F391DB5E958000067BB /* Array+Extension.swift in Sources */,
 				9F3B6F141DB5BD96000067BB /* AppDelegate.swift in Sources */,
 				9F3B6F2F1DB5C2A2000067BB /* JKAppAuthorizationRequest.swift in Sources */,

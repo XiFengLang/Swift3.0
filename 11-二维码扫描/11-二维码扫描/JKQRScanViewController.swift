@@ -4,7 +4,7 @@
 //
 //  Created by 蒋鹏 on 16/10/18.
 //  Copyright © 2016年 蒋鹏. All rights reserved.
-//
+//  二维码扫描控制器
 
 import UIKit
 import AVFoundation
@@ -17,6 +17,7 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
     private var outPut: AVCaptureMetadataOutput?
     private var scanLineImageView: UIImageView?
     private var isOn: Bool?
+    private var completionBlock: ((JKQRScanViewController,String?) -> Void)?
     
     lazy private var myTimer: Timer? = {
         return Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(resetExposureModeAndFocusMode), userInfo: nil, repeats: true)
@@ -38,10 +39,11 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
                                     y: (JKScreenHeight() - sideMargin) * 0.5,
                                     width: sideMargin, height: sideMargin)
         
+        /// 授权
         JKAppAuthorizationRequest.requestCameraAuthorization { (authorized) in
             if (authorized) {
                 self.setupCaptureSession()
-                self.startScanAnitmation()
+                self.setupScanAnimationLine()
             }else {
                 self.jk_didClickedLeftBarButtonItem()
             }
@@ -56,6 +58,7 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
                 self.session?.addOutput(self.outPut)
                 self.session?.startRunning()
             }
+            self.startScanAnimation()
             
             self.myTimer?.fire()
         }
@@ -70,9 +73,17 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
                 self.session?.removeOutput(self.outPut)
             }
             
+            self.scanLineImageView?.layer.removeAnimation(forKey: "JKQRScanAnimationKey")
+            
             self.myTimer?.invalidate()
             self.myTimer = nil
         }
+    }
+    
+    
+    /// 回调Block方法
+    public func jk_completionHandler(_ completion :@escaping (JKQRScanViewController, String?) -> Void) -> Void {
+        self.completionBlock = completion
     }
     
     
@@ -126,8 +137,10 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
             previewLayer?.frame = self.view.bounds
             self.view.layer.addSublayer(previewLayer!)
             
+            /// 开始扫描
             self.session?.startRunning()
             
+            /// 上下左右的半透明图层
             var rect = CGRect.init(x: 0,
                                    y: 0,
                                    width: JKScreenWidth(),
@@ -155,14 +168,14 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
             let sideMargin:CGFloat = 35.0
             var halfLineWidth:CGFloat = 0.6
             
-            /// 中间
+            /// 中间框
             var beziePath = UIBezierPath.init()
             var shapeLayer = CAShapeLayer.init()
             
             beziePath.move(to: CGPoint.init(x: (scanRect?.origin.x)! + halfLineWidth,
                                             y: (scanRect?.origin.y)! + halfLineWidth))
             beziePath.addLine(to: CGPoint.init(x: (scanRect?.maxX)! - halfLineWidth,
-                                               y: (scanRect?.origin.y)! - halfLineWidth))
+                                               y: (scanRect?.origin.y)! + halfLineWidth))
             beziePath.addLine(to: CGPoint.init(x: (scanRect?.maxX)! - halfLineWidth,
                                                y: (scanRect?.maxY)! - halfLineWidth))
             beziePath.addLine(to: CGPoint.init(x: (scanRect?.origin.x)! + halfLineWidth,
@@ -243,29 +256,35 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
         }
     }
     
-    private func startScanAnitmation() -> Void {
+    /// 上下移动的线条动画
+    private func setupScanAnimationLine() -> Void {
         let baseView = UIView.init(frame: scanRect!).then { (view) in
             view.backgroundColor = UIColor.clear
             view.clipsToBounds = true
+            self.view.addSubview(view)
         }
-        self.view.addSubview(baseView)
         
         let startFrame = CGRect.init(x: 3, y: -4, width: (scanRect?.width)! - 6, height: 8)
         self.scanLineImageView = UIImageView.init(frame: startFrame).then(block: { (imageView) in
-            imageView.contentMode = .scaleAspectFit
             imageView.image = UIImage.init(named: "JKQRScanLine")
+            baseView.addSubview(imageView)
         })
-        self.view.addSubview(self.scanLineImageView!)
         
+        
+    }
+    
+    /// 动画
+    @objc private func startScanAnimation() {
         let animation = CABasicAnimation.init(keyPath: "transform.translation.y")
         animation.duration = 1.5
         animation.repeatCount = MAXFLOAT
-        animation.fromValue = "-4"
-        animation.toValue = NSString.init(format: "%f", (self.scanRect?.height)! + 4.0)
+        animation.fromValue = (-4)
+        animation.toValue = (self.scanRect?.height)! + 4.0
         self.scanLineImageView?.layer.add(animation, forKey: "JKQRScanAnimationKey")
     }
     
-    func layer(withFrame frame: CGRect) -> CALayer {
+    /// 工厂
+    @objc private func layer(withFrame frame: CGRect) -> CALayer {
         return CALayer.init().then(block: { (layer) in
             layer.frame = frame
             layer.backgroundColor = UIColor.darkGray.withAlphaComponent(0.5).cgColor
@@ -323,6 +342,7 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
                 JKLOG("聚焦模式修改失败")
             }
             
+            /// 对焦点
             if (self.deviceInput?.device.isFocusPointOfInterestSupported)! {
                 self.deviceInput?.device.focusPointOfInterest = CGPoint.init(x: 0.5, y: 0.5)
             }
@@ -339,6 +359,7 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
                 JKLOG("曝光模式修改失败")
             }
             
+            /// 曝光点
             if (self.deviceInput?.device.isExposurePointOfInterestSupported)! {
                 self.deviceInput?.device.exposurePointOfInterest = CGPoint.init(x: 0.5, y: 0.5)
             }
@@ -355,14 +376,17 @@ class JKQRScanViewController: JKBaseViewController,AVCaptureMetadataOutputObject
         super.didReceiveMemoryWarning()
     }
     
+    /// 结果回调
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         if metadataObjects.count > 0 {
             let obj = metadataObjects.first as! AVMetadataMachineReadableCodeObject
-            JKLOG(obj.stringValue)
+            
             self.session?.stopRunning()
             self.session?.removeInput(self.deviceInput)
             self.session?.removeOutput(self.outPut)
-            self.jk_didClickedLeftBarButtonItem()
+            
+            
+            self.completionBlock?(self, obj.stringValue)
         }
     }
 }

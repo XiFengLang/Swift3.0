@@ -27,7 +27,7 @@ func JKLOG<T>(_ log : T?,className: String = #file,methodName: String = #functio
         let filePath = className as NSString
         let filePath_copy = filePath.lastPathComponent as NSString
         let fileName = filePath_copy.deletingPathExtension
-        NSLog("\n******[第\(lineNumber)行][\(fileName)  \(methodName)] ******\n \(log )")
+        NSLog("\n --------------------[第\(lineNumber)行][\(fileName)  \(methodName)] --------------------\n<\n \(log)\n>")
     #endif
 }
 
