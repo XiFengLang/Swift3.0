@@ -7,29 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F3B6EF01DB4E3AB000067BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EEF1DB4E3AB000067BB /* main.m */; };
-		9F3B6EF31DB4E3AB000067BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EF21DB4E3AB000067BB /* AppDelegate.m */; };
-		9F3B6EF61DB4E3AB000067BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6EF51DB4E3AB000067BB /* ViewController.m */; };
-		9F3B6EF91DB4E3AB000067BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6EF71DB4E3AB000067BB /* Main.storyboard */; };
-		9F3B6EFB1DB4E3AB000067BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6EFA1DB4E3AB000067BB /* Assets.xcassets */; };
-		9F3B6EFE1DB4E3AB000067BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3B6EFC1DB4E3AB000067BB /* LaunchScreen.storyboard */; };
+		9F3347B01DB8919900535E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347AF1DB8919900535E14 /* AppDelegate.swift */; };
+		9F3347B21DB8919900535E14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347B11DB8919900535E14 /* ViewController.swift */; };
+		9F3347B51DB8919900535E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3347B31DB8919900535E14 /* Main.storyboard */; };
+		9F3347B71DB8919900535E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3347B61DB8919900535E14 /* Assets.xcassets */; };
+		9F3347BA1DB8919900535E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3347B81DB8919900535E14 /* LaunchScreen.storyboard */; };
+		9F3347C21DB891CC00535E14 /* JKImagePickerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C11DB891CC00535E14 /* JKImagePickerTool.swift */; };
+		9F3347CC1DB8937E00535E14 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C41DB8937E00535E14 /* Array+Extension.swift */; };
+		9F3347CD1DB8937E00535E14 /* JKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C51DB8937E00535E14 /* JKAlertManager.swift */; };
+		9F3347CE1DB8937E00535E14 /* JKAppAuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C61DB8937E00535E14 /* JKAppAuthorizationRequest.swift */; };
+		9F3347CF1DB8937E00535E14 /* JKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C71DB8937E00535E14 /* JKBaseViewController.swift */; };
+		9F3347D01DB8937E00535E14 /* JKGlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C81DB8937E00535E14 /* JKGlobalDefinition.swift */; };
+		9F3347D11DB8937E00535E14 /* JKThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347C91DB8937E00535E14 /* JKThen.swift */; };
+		9F3347D21DB8937E00535E14 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347CA1DB8937E00535E14 /* UIApplication+Extension.swift */; };
+		9F3347D31DB8937E00535E14 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347CB1DB8937E00535E14 /* UIWindow+Extension.swift */; };
+		9F3347DE1DB8D49F00535E14 /* im_my_QR_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */; };
+		9F3347E01DB8D4E600535E14 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F3B6EEB1DB4E3AB000067BB /* 10-自定义相册.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-自定义相册.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F3B6EEF1DB4E3AB000067BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9F3B6EF11DB4E3AB000067BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9F3B6EF21DB4E3AB000067BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F3B6EF41DB4E3AB000067BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F3B6EF51DB4E3AB000067BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9F3B6EF81DB4E3AB000067BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F3B6EFA1DB4E3AB000067BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9F3B6EFD1DB4E3AB000067BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F3B6EFF1DB4E3AB000067BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3347AC1DB8919900535E14 /* 10-自定义相册.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-自定义相册.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3347AF1DB8919900535E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F3347B11DB8919900535E14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F3347B41DB8919900535E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F3347B61DB8919900535E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F3347B91DB8919900535E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F3347BB1DB8919900535E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3347C11DB891CC00535E14 /* JKImagePickerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKImagePickerTool.swift; sourceTree = "<group>"; };
+		9F3347C41DB8937E00535E14 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		9F3347C51DB8937E00535E14 /* JKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAlertManager.swift; sourceTree = "<group>"; };
+		9F3347C61DB8937E00535E14 /* JKAppAuthorizationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAppAuthorizationRequest.swift; sourceTree = "<group>"; };
+		9F3347C71DB8937E00535E14 /* JKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBaseViewController.swift; sourceTree = "<group>"; };
+		9F3347C81DB8937E00535E14 /* JKGlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGlobalDefinition.swift; sourceTree = "<group>"; };
+		9F3347C91DB8937E00535E14 /* JKThen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKThen.swift; sourceTree = "<group>"; };
+		9F3347CA1DB8937E00535E14 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		9F3347CB1DB8937E00535E14 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im_my_QR_code.png; sourceTree = "<group>"; };
+		9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F3B6EE81DB4E3AB000067BB /* Frameworks */ = {
+		9F3347A91DB8919900535E14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,56 +57,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F3B6EE21DB4E3AB000067BB = {
+		9F3347A31DB8919900535E14 = {
 			isa = PBXGroup;
 			children = (
-				9F3B6EED1DB4E3AB000067BB /* 10-自定义相册 */,
-				9F3B6EEC1DB4E3AB000067BB /* Products */,
+				9F3347AE1DB8919900535E14 /* 10-自定义相册 */,
+				9F3347AD1DB8919900535E14 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9F3B6EEC1DB4E3AB000067BB /* Products */ = {
+		9F3347AD1DB8919900535E14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F3B6EEB1DB4E3AB000067BB /* 10-自定义相册.app */,
+				9F3347AC1DB8919900535E14 /* 10-自定义相册.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F3B6EED1DB4E3AB000067BB /* 10-自定义相册 */ = {
+		9F3347AE1DB8919900535E14 /* 10-自定义相册 */ = {
 			isa = PBXGroup;
 			children = (
-				9F3B6EF11DB4E3AB000067BB /* AppDelegate.h */,
-				9F3B6EF21DB4E3AB000067BB /* AppDelegate.m */,
-				9F3B6EF41DB4E3AB000067BB /* ViewController.h */,
-				9F3B6EF51DB4E3AB000067BB /* ViewController.m */,
-				9F3B6EF71DB4E3AB000067BB /* Main.storyboard */,
-				9F3B6EFA1DB4E3AB000067BB /* Assets.xcassets */,
-				9F3B6EFC1DB4E3AB000067BB /* LaunchScreen.storyboard */,
-				9F3B6EFF1DB4E3AB000067BB /* Info.plist */,
-				9F3B6EEE1DB4E3AB000067BB /* Supporting Files */,
+				9F3347C31DB8937E00535E14 /* 通用 */,
+				9F3347AF1DB8919900535E14 /* AppDelegate.swift */,
+				9F3347B11DB8919900535E14 /* ViewController.swift */,
+				9F3347C11DB891CC00535E14 /* JKImagePickerTool.swift */,
+				9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */,
+				9F3347B31DB8919900535E14 /* Main.storyboard */,
+				9F3347B61DB8919900535E14 /* Assets.xcassets */,
+				9F3347B81DB8919900535E14 /* LaunchScreen.storyboard */,
+				9F3347BB1DB8919900535E14 /* Info.plist */,
 			);
 			path = "10-自定义相册";
 			sourceTree = "<group>";
 		};
-		9F3B6EEE1DB4E3AB000067BB /* Supporting Files */ = {
+		9F3347C31DB8937E00535E14 /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
-				9F3B6EEF1DB4E3AB000067BB /* main.m */,
+				9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */,
+				9F3347C41DB8937E00535E14 /* Array+Extension.swift */,
+				9F3347C51DB8937E00535E14 /* JKAlertManager.swift */,
+				9F3347C61DB8937E00535E14 /* JKAppAuthorizationRequest.swift */,
+				9F3347C71DB8937E00535E14 /* JKBaseViewController.swift */,
+				9F3347C81DB8937E00535E14 /* JKGlobalDefinition.swift */,
+				9F3347C91DB8937E00535E14 /* JKThen.swift */,
+				9F3347CA1DB8937E00535E14 /* UIApplication+Extension.swift */,
+				9F3347CB1DB8937E00535E14 /* UIWindow+Extension.swift */,
 			);
-			name = "Supporting Files";
+			path = "通用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F3B6EEA1DB4E3AB000067BB /* 10-自定义相册 */ = {
+		9F3347AB1DB8919900535E14 /* 10-自定义相册 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F3B6F021DB4E3AB000067BB /* Build configuration list for PBXNativeTarget "10-自定义相册" */;
+			buildConfigurationList = 9F3347BE1DB8919900535E14 /* Build configuration list for PBXNativeTarget "10-自定义相册" */;
 			buildPhases = (
-				9F3B6EE71DB4E3AB000067BB /* Sources */,
-				9F3B6EE81DB4E3AB000067BB /* Frameworks */,
-				9F3B6EE91DB4E3AB000067BB /* Resources */,
+				9F3347A81DB8919900535E14 /* Sources */,
+				9F3347A91DB8919900535E14 /* Frameworks */,
+				9F3347AA1DB8919900535E14 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -96,27 +122,27 @@
 			);
 			name = "10-自定义相册";
 			productName = "10-自定义相册";
-			productReference = 9F3B6EEB1DB4E3AB000067BB /* 10-自定义相册.app */;
+			productReference = 9F3347AC1DB8919900535E14 /* 10-自定义相册.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9F3B6EE31DB4E3AB000067BB /* Project object */ = {
+		9F3347A41DB8919900535E14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = JK;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "蒋鹏";
 				TargetAttributes = {
-					9F3B6EEA1DB4E3AB000067BB = {
+					9F3347AB1DB8919900535E14 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 756Y4UTJUH;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 9F3B6EE61DB4E3AB000067BB /* Build configuration list for PBXProject "10-自定义相册" */;
+			buildConfigurationList = 9F3347A71DB8919900535E14 /* Build configuration list for PBXProject "10-自定义相册" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,55 +150,65 @@
 				en,
 				Base,
 			);
-			mainGroup = 9F3B6EE21DB4E3AB000067BB;
-			productRefGroup = 9F3B6EEC1DB4E3AB000067BB /* Products */;
+			mainGroup = 9F3347A31DB8919900535E14;
+			productRefGroup = 9F3347AD1DB8919900535E14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F3B6EEA1DB4E3AB000067BB /* 10-自定义相册 */,
+				9F3347AB1DB8919900535E14 /* 10-自定义相册 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9F3B6EE91DB4E3AB000067BB /* Resources */ = {
+		9F3347AA1DB8919900535E14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F3B6EFE1DB4E3AB000067BB /* LaunchScreen.storyboard in Resources */,
-				9F3B6EFB1DB4E3AB000067BB /* Assets.xcassets in Resources */,
-				9F3B6EF91DB4E3AB000067BB /* Main.storyboard in Resources */,
+				9F3347BA1DB8919900535E14 /* LaunchScreen.storyboard in Resources */,
+				9F3347B71DB8919900535E14 /* Assets.xcassets in Resources */,
+				9F3347B51DB8919900535E14 /* Main.storyboard in Resources */,
+				9F3347DE1DB8D49F00535E14 /* im_my_QR_code.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9F3B6EE71DB4E3AB000067BB /* Sources */ = {
+		9F3347A81DB8919900535E14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F3B6EF61DB4E3AB000067BB /* ViewController.m in Sources */,
-				9F3B6EF31DB4E3AB000067BB /* AppDelegate.m in Sources */,
-				9F3B6EF01DB4E3AB000067BB /* main.m in Sources */,
+				9F3347B21DB8919900535E14 /* ViewController.swift in Sources */,
+				9F3347C21DB891CC00535E14 /* JKImagePickerTool.swift in Sources */,
+				9F3347D11DB8937E00535E14 /* JKThen.swift in Sources */,
+				9F3347E01DB8D4E600535E14 /* UIImage+Extension.swift in Sources */,
+				9F3347D01DB8937E00535E14 /* JKGlobalDefinition.swift in Sources */,
+				9F3347D31DB8937E00535E14 /* UIWindow+Extension.swift in Sources */,
+				9F3347CF1DB8937E00535E14 /* JKBaseViewController.swift in Sources */,
+				9F3347CE1DB8937E00535E14 /* JKAppAuthorizationRequest.swift in Sources */,
+				9F3347B01DB8919900535E14 /* AppDelegate.swift in Sources */,
+				9F3347CC1DB8937E00535E14 /* Array+Extension.swift in Sources */,
+				9F3347D21DB8937E00535E14 /* UIApplication+Extension.swift in Sources */,
+				9F3347CD1DB8937E00535E14 /* JKAlertManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9F3B6EF71DB4E3AB000067BB /* Main.storyboard */ = {
+		9F3347B31DB8919900535E14 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9F3B6EF81DB4E3AB000067BB /* Base */,
+				9F3347B41DB8919900535E14 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9F3B6EFC1DB4E3AB000067BB /* LaunchScreen.storyboard */ = {
+		9F3347B81DB8919900535E14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9F3B6EFD1DB4E3AB000067BB /* Base */,
+				9F3347B91DB8919900535E14 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -180,7 +216,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9F3B6F001DB4E3AB000067BB /* Debug */ = {
+		9F3347BC1DB8919900535E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,10 +260,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		9F3B6F011DB4E3AB000067BB /* Release */ = {
+		9F3347BD1DB8919900535E14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,11 +302,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9F3B6F031DB4E3AB000067BB /* Debug */ = {
+		9F3347BF1DB8919900535E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -277,10 +316,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.XiFengLang.-0------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		9F3B6F041DB4E3AB000067BB /* Release */ = {
+		9F3347C01DB8919900535E14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,30 +329,32 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.XiFengLang.-0------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F3B6EE61DB4E3AB000067BB /* Build configuration list for PBXProject "10-自定义相册" */ = {
+		9F3347A71DB8919900535E14 /* Build configuration list for PBXProject "10-自定义相册" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F3B6F001DB4E3AB000067BB /* Debug */,
-				9F3B6F011DB4E3AB000067BB /* Release */,
+				9F3347BC1DB8919900535E14 /* Debug */,
+				9F3347BD1DB8919900535E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F3B6F021DB4E3AB000067BB /* Build configuration list for PBXNativeTarget "10-自定义相册" */ = {
+		9F3347BE1DB8919900535E14 /* Build configuration list for PBXNativeTarget "10-自定义相册" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F3B6F031DB4E3AB000067BB /* Debug */,
-				9F3B6F041DB4E3AB000067BB /* Release */,
+				9F3347BF1DB8919900535E14 /* Debug */,
+				9F3347C01DB8919900535E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9F3B6EE31DB4E3AB000067BB /* Project object */;
+	rootObject = 9F3347A41DB8919900535E14 /* Project object */;
 }

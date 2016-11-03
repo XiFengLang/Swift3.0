@@ -17,11 +17,11 @@ class JKQRCodeTool: NSObject {
         if image == nil || image?.cgImage == nil {
             completionHandle(nil,NSError.init(domain: "JKQRCodeToolError:图片为空，无法识别", code: 9301, userInfo: ["reason":"JKQRCodeToolError:图片为空，无法识别"]))
         } else {
-            //// 可用于人脸识别 CIDetectorTypeFace  CIDetectorTypeText CIDetectorTypeQRCode
+            /// 可用于人脸识别 CIDetectorTypeFace  CIDetectorTypeText CIDetectorTypeQRCode
             let detector = CIDetector.init(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
-            //2. 扫描获取的特征组
+            /// 扫描获取的特征组
             let features = detector?.features(in: CIImage.init(cgImage: (image?.cgImage)!))
-            //3. 获取扫描结果
+            /// 获取扫描结果
             if features != nil && (features?.count)! > 0 {
                 let feature:CIQRCodeFeature = features?.first as! CIQRCodeFeature
                 completionHandle(feature.messageString, nil)
@@ -72,7 +72,7 @@ class JKQRCodeTool: NSObject {
                 /// 替换黑色
                 colorFilter?.setValue(rgbColor, forKey: "inputColor0")
                 /// 默认白色，可自行替换
-                colorFilter?.setValue(CIColor.init(red: 1, green: 1, blue: 1), forKey: "inputColor1")
+                colorFilter?.setValue(CIColor.init(color: UIColor.white), forKey: "inputColor1")
                 let codeImage = colorFilter?.outputImage
                 self.jk_resize(ciImage: codeImage!, size: size, completionHandle: completionHandle)
             }
@@ -106,6 +106,7 @@ class JKQRCodeTool: NSObject {
         /// 黑白灰
 //        let colorSpaceRef = CGColorSpaceCreateDeviceGray()
 //        var contextRef = CGContext.init(data: nil, width: Int(width), height: Int(height), bitsPerComponent: 8, bytesPerRow: 0, space: colorSpaceRef, bitmapInfo:CGImageAlphaInfo.none.rawValue)
+        
         
         let context = CIContext.init(options: nil)
         var imageRef = context.createCGImage(ciImage, from: ciImage.extent)
@@ -152,4 +153,8 @@ class JKQRCodeTool: NSObject {
             }
         }
     }
+    
+
 }
+
+

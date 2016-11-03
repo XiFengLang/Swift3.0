@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.lightGray
+        self.view.backgroundColor = UIColor.white
         self.title = "二维码识别/生成"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "扫描二维码", style: .plain, target: self, action: #selector(scanQRCode))
         
@@ -41,11 +41,27 @@ class ViewController: UIViewController {
         imageView = UIImageView.init()
         imageView?.contentMode = .scaleAspectFit
         imageView?.center = self.view.center
-        imageView?.bounds = CGRect.init(x: 0, y: 0, width: 200, height: 200)
-        imageView?.backgroundColor = UIColor.red
+        imageView?.bounds = CGRect.init(x: 0, y: 0, width: 300, height: 300)
+//        imageView?.backgroundColor = UIColor.clear
         self.view.addSubview(imageView!)
         
+        self.imageView?.layer.shadowOffset = CGSize.init(width: 0, height: 1) // 设置阴影的偏移量
+        self.imageView?.layer.shadowRadius = 1  // 设置阴影的半径
+        self.imageView?.layer.shadowColor = UIColor.black.cgColor // 设置阴影的颜色为黑色
+        self.imageView?.layer.shadowOpacity = 0.5 // 设置阴影的不透明度
+        
+        
+        
+        let image40 = UIImage.init(named: "AppIcon_40")
+        
+        var temp = image40.
+        
+        
+        
     }
+    
+    
+    
     
     func scanQRCode() -> Void {
         JKAppAuthorizationRequest.requestCameraAuthorization { (bbb) in
@@ -76,43 +92,47 @@ class ViewController: UIViewController {
                 
                 /// 黑白色
 /*
+ */
                 JKQRCodeTool.jk_QRCodeImage(withString: str, size: CGSize.init(width: 500, height: 500), completionHandle: { (image, error1) in
                     if error1 != nil {
                         JKLOG(error1)
                     } else {
-                        imageView.image = image
+                        
+                        // 带阴影效果
+                        let tool = JKQRTool.init()
+                        let newImage = tool.imageBlack(toTransparent: image, withRed: 0.2, andGreen: 0.5, andBlue: 0.8)
+                        self.imageView?.image = newImage
                     }
                 })
- */
                 
                 /// 彩色
-                JKQRCodeTool.jk_QRCodeImage(withString: str, rgbColor: CIColor.init(red: 1, green: 0, blue: 0, alpha: 1), size: CGSize.init(width: 200, height: 200), completionHandle: { (image, error2) in
-                    if error2 != nil {
-                        JKLOG(error2)
-                    } else {
-                        self.imageView?.image = image
-                        
-                        
-                        /// 添加LOGO
-                        JKQRCodeTool.jk_addLogo(logo: UIImage.init(named: "logo"), forQRCodeImage: image, completionHandle: { (qrImage, error3) in
-                            if error3 != nil {
-                                JKLOG(error3)
-                            } else {
-                                self.imageView?.image = qrImage
-                                
-                                
-                                /// 识别二维码图片
-                                JKQRCodeTool.jk_recognizeQRCodeImage(qrImage, completionHandle: { (str, error4) in
-                                    if error4 != nil {
-                                        JKLOG(error4)
-                                    } else {
-                                        JKLOG(str)
-                                    }
-                                })
-                            }
-                        })
-                    }
-                })
+//                JKQRCodeTool.jk_QRCodeImage(withString: str, rgbColor: CIColor.init(red: 1, green: 0, blue: 0, alpha: 1), size: CGSize.init(width: 200, height: 200), completionHandle: { (image, error2) in
+//                    if error2 != nil {
+//                        JKLOG(error2)
+//                    } else {
+//                        self.imageView?.image = image
+//                        
+//                        
+//                        /// 添加LOGO
+////                        JKQRCodeTool.jk_addLogo(logo: UIImage.init(named: "logo"), forQRCodeImage: image, completionHandle: { (qrImage, error3) in
+////                            if error3 != nil {
+////                                JKLOG(error3)
+////                            } else {
+////                                self.imageView?.image = qrImage
+////                                
+////                                
+////                                /// 识别二维码图片
+////                                JKQRCodeTool.jk_recognizeQRCodeImage(qrImage, completionHandle: { (str, error4) in
+////                                    if error4 != nil {
+////                                        JKLOG(error4)
+////                                    } else {
+////                                        JKLOG(str)
+////                                    }
+////                                })
+////                            }
+////                        })
+//                    }
+//                })
                 
             }
         })

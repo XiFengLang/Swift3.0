@@ -63,6 +63,15 @@ class JKMapViewController: FCBaseViewController {
     }
     
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.mapView?.showsUserLocation = false
+        self.mapView?.frame = CGRect.zero
+        self.mapView?.removeFromSuperview()
+        self.mapView?.delegate = nil
+    }
+    
     final func locationToUserPosition(sender: UIButton?) {
         sender?.isSelected = true
         self.mapView?.setCenter((self.mapView?.userLocation.coordinate)!, animated: true)
@@ -108,6 +117,9 @@ extension JKMapViewController: MKMapViewDelegate{
                 }
             }
         }
+        
+//        self.mapView?.removeFromSuperview()
+//        self.view.addSubview(self.mapView!)
     }
 }
 
