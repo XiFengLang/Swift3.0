@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     final func pushAction() {
-        let blockVC : BlockTestViewController = BlockTestViewController.init()
+        let blockVC : BlockTestViewController = BlockTestViewController()
         self.navigationController?.pushViewController(blockVC, animated: true)
     }
     

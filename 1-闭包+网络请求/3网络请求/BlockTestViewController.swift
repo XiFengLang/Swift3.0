@@ -9,12 +9,14 @@
 import UIKit
 
 
-typealias JKTestBlock = ((_ text:String) -> String)?
+typealias JKTestBlock = (_ text:String) -> String
+
 
 class BlockTestViewController: UIViewController {
     
     //  ((_ block携带的参数及类型)  -> 返回类型)?这里必须可选
-    var block: JKTestBlock
+    var block: JKTestBlock?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
