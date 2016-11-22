@@ -52,4 +52,17 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
     CGColorSpaceRelease(colorSpace);
     return resultUIImage;
 }
+
+
++ (UIImage *)generateBarCode:(NSString *)barCode{
+    // 不能是中文
+    NSData *data = [barCode dataUsingEncoding:NSUTF8StringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
+    [filter setDefaults];
+    [filter setValue:data forKey:@"inputMessage"];
+    CIImage *outputImage = [filter outputImage];
+    
+    return [UIImage imageWithCIImage:outputImage];
+}
+
 @end

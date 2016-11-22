@@ -12,7 +12,6 @@
 		9F3B6E7F1DAE47EB000067BB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6E7E1DAE47EB000067BB /* String+Extension.swift */; };
 		9F3B6ECC1DB07332000067BB /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6ECB1DB07332000067BB /* UIWindow+Extension.swift */; };
 		9F3B6ED01DB0DA05000067BB /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6ECF1DB0DA05000067BB /* FileManager+Extension.swift */; };
-		9F3B6EDA1DB4869A000067BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6ED91DB4869A000067BB /* UIFont+Extension.swift */; };
 		9F3B6F061DB4E401000067BB /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F051DB4E401000067BB /* Array+Extension.swift */; };
 		9F3B6F351DB5D834000067BB /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B6F341DB5D834000067BB /* UIApplication+Extension.swift */; };
 		9FB05FF21DACB47C0019AFE7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */; };
@@ -38,7 +37,6 @@
 		9F3B6E7E1DAE47EB000067BB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9F3B6ECB1DB07332000067BB /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		9F3B6ECF1DB0DA05000067BB /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
-		9F3B6ED91DB4869A000067BB /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		9F3B6F051DB4E401000067BB /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		9F3B6F341DB5D834000067BB /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		9FB05FF11DACB47C0019AFE7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				9F3B6ECB1DB07332000067BB /* UIWindow+Extension.swift */,
 				9F3B6ECF1DB0DA05000067BB /* FileManager+Extension.swift */,
 				9F3B6F341DB5D834000067BB /* UIApplication+Extension.swift */,
-				9F3B6ED91DB4869A000067BB /* UIFont+Extension.swift */,
 			);
 			path = "封装";
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 				9FC56E8D1DABA4BD00F0CA20 /* AppDelegate.swift in Sources */,
 				9FB05FF21DACB47C0019AFE7 /* UIColor+Extension.swift in Sources */,
 				9FC56EA51DABA77700F0CA20 /* NotificationName+Extension.swift in Sources */,
-				9F3B6EDA1DB4869A000067BB /* UIFont+Extension.swift in Sources */,
 				9FC56EAE1DABA8D300F0CA20 /* JKGlobalDefinition.swift in Sources */,
 				9F02E5291DAC9F1400951504 /* UIView+Factory.swift in Sources */,
 				9FC56EAD1DABA8D300F0CA20 /* JKBaseViewController.swift in Sources */,

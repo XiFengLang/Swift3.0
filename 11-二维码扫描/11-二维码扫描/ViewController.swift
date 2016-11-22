@@ -51,12 +51,8 @@ class ViewController: UIViewController {
         self.imageView?.layer.shadowOpacity = 0.5 // 设置阴影的不透明度
         
         
-        
-        let image40 = UIImage.init(named: "AppIcon_40")
-        
-        var temp = image40.
-        
-        
+        let image = JKQRTool.generateBarCode("CICode128BarcodeGenerator")
+        JKLOG(image)
         
     }
     
@@ -93,7 +89,7 @@ class ViewController: UIViewController {
                 /// 黑白色
 /*
  */
-                JKQRCodeTool.jk_QRCodeImage(withString: str, size: CGSize.init(width: 500, height: 500), completionHandle: { (image, error1) in
+                JKQRCodeTool.jk_QRCodeImage(withString: "WIFI:T:WPA;P:\"fitcome2015\";S:fitcomers;", size: CGSize.init(width: 500, height: 500), completionHandle: { (image, error1) in
                     if error1 != nil {
                         JKLOG(error1)
                     } else {

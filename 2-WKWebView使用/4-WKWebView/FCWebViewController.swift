@@ -105,6 +105,8 @@ class FCWebViewController: UIViewController {
         // 一定要调用，不然self会一直被强引用，就算释放webView也不能将self释放
         self.webView?.configuration.userContentController.removeScriptMessageHandler(forName: "AppModel")
         
+        
+        self.progressView?.removeFromSuperview()
         self.webView?.stopLoading()
     }
     

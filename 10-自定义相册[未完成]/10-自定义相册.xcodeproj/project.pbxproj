@@ -23,6 +23,8 @@
 		9F3347D31DB8937E00535E14 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347CB1DB8937E00535E14 /* UIWindow+Extension.swift */; };
 		9F3347DE1DB8D49F00535E14 /* im_my_QR_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */; };
 		9F3347E01DB8D4E600535E14 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */; };
+		9FBAB2AC1DD0918200CA3F9D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBAB2AB1DD0918200CA3F9D /* UIColor+Extension.swift */; };
+		9FBAB2B21DD095FD00CA3F9D /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBAB2B11DD095FD00CA3F9D /* scan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		9F3347CB1DB8937E00535E14 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im_my_QR_code.png; sourceTree = "<group>"; };
 		9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9FBAB2AB1DD0918200CA3F9D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9FBAB2B11DD095FD00CA3F9D /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				9F3347AF1DB8919900535E14 /* AppDelegate.swift */,
 				9F3347B11DB8919900535E14 /* ViewController.swift */,
 				9F3347C11DB891CC00535E14 /* JKImagePickerTool.swift */,
+				9FBAB2B11DD095FD00CA3F9D /* scan.png */,
 				9F3347DD1DB8D49F00535E14 /* im_my_QR_code.png */,
 				9F3347B31DB8919900535E14 /* Main.storyboard */,
 				9F3347B61DB8919900535E14 /* Assets.xcassets */,
@@ -92,6 +97,7 @@
 		9F3347C31DB8937E00535E14 /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
+				9FBAB2AB1DD0918200CA3F9D /* UIColor+Extension.swift */,
 				9F3347DF1DB8D4E600535E14 /* UIImage+Extension.swift */,
 				9F3347C41DB8937E00535E14 /* Array+Extension.swift */,
 				9F3347C51DB8937E00535E14 /* JKAlertManager.swift */,
@@ -132,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "蒋鹏";
 				TargetAttributes = {
 					9F3347AB1DB8919900535E14 = {
@@ -168,6 +174,7 @@
 				9F3347BA1DB8919900535E14 /* LaunchScreen.storyboard in Resources */,
 				9F3347B71DB8919900535E14 /* Assets.xcassets in Resources */,
 				9F3347B51DB8919900535E14 /* Main.storyboard in Resources */,
+				9FBAB2B21DD095FD00CA3F9D /* scan.png in Resources */,
 				9F3347DE1DB8D49F00535E14 /* im_my_QR_code.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +196,7 @@
 				9F3347CE1DB8937E00535E14 /* JKAppAuthorizationRequest.swift in Sources */,
 				9F3347B01DB8919900535E14 /* AppDelegate.swift in Sources */,
 				9F3347CC1DB8937E00535E14 /* Array+Extension.swift in Sources */,
+				9FBAB2AC1DD0918200CA3F9D /* UIColor+Extension.swift in Sources */,
 				9F3347D21DB8937E00535E14 /* UIApplication+Extension.swift in Sources */,
 				9F3347CD1DB8937E00535E14 /* JKAlertManager.swift in Sources */,
 			);
@@ -234,6 +242,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -283,6 +292,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

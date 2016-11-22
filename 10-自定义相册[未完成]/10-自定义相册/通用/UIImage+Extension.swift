@@ -72,7 +72,7 @@ extension UIImage {
         UIGraphicsBeginImageContext(targetSize)
         
         if isOpaque == true {
-            UIColor.yellow.setFill()
+            UIColor.init(red: 254.0 / 255.0, green: 212.0 / 255.0, blue: 48.0 / 255.0, alpha: 1).setFill()
             let rect = CGRect.init(origin: CGPoint.init(x: 0, y: 0), size: targetSize)
             UIRectFill(rect)
         }
@@ -252,4 +252,36 @@ extension UIImage {
         return newImage!
     }
 
+    
+    
+    
+    
+    /// 彩色+保留Alpha通道
+    func image(withTintColor color:UIColor) -> UIImage {
+        return self.image(withTintColor: color, blendMode: .destinationIn)
+    }
+
+    /// 灰色图片
+    func image(withGradientTintColor color: UIColor) -> UIImage {
+        return self.image(withTintColor: color, blendMode: .overlay)
+    }
+    
+    /// 二次修改图片的TintColor
+    func image(withTintColor tintColor:UIColor, blendMode:CGBlendMode) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        tintColor.setFill()
+        let bounds = CGRect.init(origin: CGPoint.zero, size: self.size)
+        UIRectFill(bounds)
+        
+        self.draw(in: bounds, blendMode: blendMode, alpha: 1.0)
+        
+        if blendMode != .destinationIn {
+            self.draw(in: bounds, blendMode: .destinationIn, alpha: 1.0)
+        }
+        
+        let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return tintedImage!
+    }
+    
 }

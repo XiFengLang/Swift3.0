@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        let image = UIImage.image(named: "im_my_QR_code");
+        // UIColor.init(red: 32.0 / 256.0, green: 44.0 / 256.0, blue: 61.0 / 256.0, alpha: 1)
+        
+        let image = UIImage.image(named: "scan")?.image(withTintColor: UIColor.JKThemColor_Light)
 //        let image40 = image?.resize(withSize: CGSize.init(width: 20, height: 20), isOpaque: true)
 //        let image60 = image?.resize(withSize: CGSize.init(width: 30, height: 30), isOpaque: true)
 //        
@@ -30,9 +32,10 @@ class ViewController: UIViewController {
 //        let image80 = image?.resize(withSize: CGSize.init(width: 40, height: 40), isOpaque: true)
 //        let image120 = image?.resize(withSize: CGSize.init(width: 60, height: 60), isOpaque: true)
 //        
+//        
 //        let image180 = image?.resize(withSize: CGSize.init(width: 90, height: 90), isOpaque: true)
-//
-//        JKLOG("dada")
+//        
+        JKLOG("dada")
     }
 
     override func viewDidAppear(_ animated: Bool) {

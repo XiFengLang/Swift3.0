@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+//typealias JKTestBlock = ((_ text:String) -> String)? 错误写法
 typealias JKTestBlock = (_ text:String) -> String
 
 

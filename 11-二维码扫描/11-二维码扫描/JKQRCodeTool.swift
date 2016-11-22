@@ -38,12 +38,12 @@ class JKQRCodeTool: NSObject {
             completionHandle(nil,NSError.init(domain: "JKQRCodeToolError:内容为空，无法生成二维码", code: 9303, userInfo: ["reason":"JKQRCodeToolError:内容为空，无法生成二维码"]))
         } else {
             let data = content?.data(using: .utf8)
-            /// 创建二维码滤镜
+            /// 创建二维码滤镜   CICode128BarcodeGenerator条形码 CIQRCodeGenerator二维码
             let filter = CIFilter.init(name: "CIQRCodeGenerator")
             filter?.setDefaults()
             /// 数据源
             filter?.setValue(data, forKey: "inputMessage")
-            /// L M Q H 修正质量，应该跟采样有关
+            /// L M Q H 修正质量
             filter?.setValue("H", forKey: "inputCorrectionLevel")
             /// 黑白色的图片
             let ciImage = filter?.outputImage

@@ -11,4 +11,5 @@
 
 @interface JKQRTool : NSObject
 - (UIImage*)imageBlackToTransparent:(UIImage*)image withRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
++ (UIImage *)generateBarCode:(NSString *)barCode;
 @end
